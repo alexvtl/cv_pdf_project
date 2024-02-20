@@ -1,0 +1,267 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+*::-webkit-scrollbar {
+  opacity: 0;
+}
+*::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2px 0px;
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 93vh;
+}
+#section_nav {
+  display: flex;
+  width: 5%;
+  min-width: 70px;
+  height: 100%;
+}
+nav {
+  width: 100%;
+  height: 100%;
+}
+.nav_ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.nav_icone_box {
+  list-style-type: none;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 250ms;
+  cursor: pointer;
+}
+.nav_icone_box:hover {
+  box-shadow: 2px 3px 5px;
+}
+.nav_icone_box:hover .icone {
+  color: blue;
+}
+.nav_icone_box:hover + p {
+  color: rgb(157, 255, 0);
+}
+.nav_icone_box + p {
+  color: white;
+}
+
+.menu_selected {
+  box-shadow: 2px 3px 5px;
+}
+.menu_selected .icone {
+  color: blue;
+}
+.menu_selected + p {
+  color: rgb(157, 255, 0);
+}
+.icone {
+  font-size: 25px;
+}
+#section_pdf {
+  width: 40%;
+  min-width: 500px;
+  height: 100%;
+}
+
+#resume_preview {
+  height: 100%;
+  margin: auto 0;
+  width: 100%;
+  align-items: center;
+}
+#section_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+.section_form_bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+#section_hardskills {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#section_input_hardskills {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#section_softskills {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#section_input_softskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#section_job_all_experiences {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (max-width: 1300px) {
+  #section_job_all_experiences {
+    flex-direction: column;
+  }
+}
+.section_job_bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.box_input {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  cursor: pointer;
+  color: rgb(224, 224, 224);
+}
+input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  padding: 0px 0px 0px 10px;
+  outline: none;
+}
+.color {
+  width: 100px;
+  padding: 0px 2px;
+  border: none;
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#history {
+  height: 25px;
+  border-radius: 10px;
+  padding: 5px 30px;
+  position: absolute;
+  right: 30px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  color: #4801ff;
+}
+
+#history:hover {
+  letter-spacing: 3px;
+  background-color: rgb(184, 13, 242);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.iconDelete {
+  color: red;
+  cursor: pointer;
+}
+
+.list_li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list_cv_title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.list_cv_title:hover {
+  box-shadow: 0.5px 2px;
+}
+
+#listCv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
